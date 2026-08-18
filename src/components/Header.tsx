@@ -46,9 +46,9 @@ export function Header() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="flex items-center"
-          aria-label="TatulAI — back to top"
+          aria-label="TatulBuilds — back to top"
         >
-          <img src="/logo.png" alt="TatulAI" className="logo-img h-14 w-auto sm:h-20 lg:h-24" />
+          <img src="/logo.png" alt="TatulBuilds" className="logo-img h-12 w-auto sm:h-16 lg:h-20" />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

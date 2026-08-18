@@ -22,8 +22,6 @@ export interface Translation {
     greeting: string;
     subtext: string;
     ctaPrimary: string;
-    ctaSecondary: string;
-    ctaSecondaryComingSoon: string;
   };
   about: {
     eyebrow: string;
@@ -42,16 +40,13 @@ export interface Translation {
     statusCompleted: string;
     emptyState: string;
     viewCredential: string;
-    items: Record<"claudeCode", { name: string; description: string }>;
+    items: Record<"claude101" | "claudeCode101", { name: string; description: string }>;
   };
   projects: {
     eyebrow: string;
     heading: string;
     viewLink: string;
     items: Record<"carscope" | "n8nLibrary" | "instant" | "lvg", { description: string }>;
-  };
-  testimonial: {
-    placeholder: string;
   };
   contact: {
     eyebrow: string;
@@ -77,7 +72,7 @@ export interface Translation {
 
 export const translations: Record<Lang, Translation> = {
   en: {
-    meta: { title: "Tatul Ghazaryan — TatulAI" },
+    meta: { title: "Tatul Ghazaryan — TatulBuilds" },
     nav: {
       about: "About",
       skills: "Skills",
@@ -89,10 +84,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "AI Builder & Vibe Coder",
       greeting: "Hi, I'm Tatul",
       subtext:
-        "I'm an AI Builder and vibe coder specializing in n8n workflow automation and modern web applications. I build custom, reliable digital systems that help businesses eliminate repetitive work, streamline operations, and scale efficiently.",
+        "I'm an AI Builder and vibe coder specializing in n8n workflow automation and modern web development. I build custom automations, websites, and web applications that solve real business problems, streamline operations, and turn ideas into reliable digital products.",
       ctaPrimary: "Get in touch",
-      ctaSecondary: "Download CV",
-      ctaSecondaryComingSoon: "CV coming soon",
     },
     about: {
       eyebrow: "About",
@@ -137,9 +130,13 @@ export const translations: Record<Lang, Translation> = {
       emptyState: "Certifications coming soon.",
       viewCredential: "View credential",
       items: {
-        claudeCode: {
-          name: "Claude Code — AI-Assisted Development",
-          description: "Deepening my Claude Code workflow for AI-assisted, production-grade development.",
+        claude101: {
+          name: "Claude 101",
+          description: "Completed Anthropic's foundational course on working effectively with Claude.",
+        },
+        claudeCode101: {
+          name: "Claude Code 101",
+          description: "Completed Anthropic's course on AI-assisted development with Claude Code.",
         },
       },
     },
@@ -165,9 +162,6 @@ export const translations: Record<Lang, Translation> = {
         },
       },
     },
-    testimonial: {
-      placeholder: "Client testimonials coming soon.",
-    },
     contact: {
       eyebrow: "Contact",
       heading: "Let's work together",
@@ -190,7 +184,7 @@ export const translations: Record<Lang, Translation> = {
     },
   },
   sk: {
-    meta: { title: "Tatul Ghazaryan — TatulAI" },
+    meta: { title: "Tatul Ghazaryan — TatulBuilds" },
     nav: {
       about: "O mne",
       skills: "Zručnosti",
@@ -202,10 +196,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "AI Builder & Vibe Coder",
       greeting: "Ahoj, som Tatul",
       subtext:
-        "Som AI Builder a vibe coder, ktorý sa špecializuje na automatizáciu workflow v n8n a moderné webové aplikácie. Vytváram vlastné, spoľahlivé digitálne systémy, ktoré pomáhajú firmám eliminovať opakujúcu sa prácu, zefektívniť procesy a rásť efektívnejšie.",
+        "Som AI Builder a vibe coder so zameraním na automatizáciu workflowov v n8n a moderný webový vývoj. Vytváram automatizácie, webové stránky a webové aplikácie na mieru, ktoré riešia reálne potreby firiem, zjednodušujú procesy a premieňajú nápady na spoľahlivé digitálne riešenia.",
       ctaPrimary: "Kontaktujte ma",
-      ctaSecondary: "Stiahnuť CV",
-      ctaSecondaryComingSoon: "CV čoskoro",
     },
     about: {
       eyebrow: "O mne",
@@ -250,9 +242,13 @@ export const translations: Record<Lang, Translation> = {
       emptyState: "Certifikáty už čoskoro.",
       viewCredential: "Zobraziť certifikát",
       items: {
-        claudeCode: {
-          name: "Claude Code — AI-asistovaný vývoj",
-          description: "Prehlbujem si prácu s Claude Code pri AI-asistovanom vývoji produkčnej kvality.",
+        claude101: {
+          name: "Claude 101",
+          description: "Absolvoval som základný kurz spoločnosti Anthropic o efektívnej práci s Claude.",
+        },
+        claudeCode101: {
+          name: "Claude Code 101",
+          description: "Absolvoval som kurz spoločnosti Anthropic o AI-asistovanom vývoji s Claude Code.",
         },
       },
     },
@@ -278,9 +274,6 @@ export const translations: Record<Lang, Translation> = {
         },
       },
     },
-    testimonial: {
-      placeholder: "Referencie od klientov už čoskoro.",
-    },
     contact: {
       eyebrow: "Kontakt",
       heading: "Poďme spolupracovať",
@@ -303,7 +296,7 @@ export const translations: Record<Lang, Translation> = {
     },
   },
   am: {
-    meta: { title: "Թաթուլ Ղազարյան — TatulAI" },
+    meta: { title: "Թաթուլ Ղազարյան — TatulBuilds" },
     nav: {
       about: "Իմ մասին",
       skills: "Հմտություններ",
@@ -315,10 +308,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "AI Builder & Vibe Coder",
       greeting: "Բարև, ես Թաթուլն եմ",
       subtext:
-        "Ես AI Builder և vibe coder եմ, մասնագիտացած n8n workflow ավտոմատացման և ժամանակակից վեբ հավելվածների ոլորտում։ Ես ստեղծում եմ հարմարեցված, հուսալի թվային համակարգեր, որոնք օգնում են բիզնեսներին վերացնել կրկնվող աշխատանքը, պարզեցնել գործընթացները և արդյունավետորեն մասշտաբավորվել։",
+        "Ես AI Builder և vibe coder եմ՝ մասնագիտացած n8n workflow ավտոմատացման և ժամանակակից կայքերի ու վեբ հավելվածների ստեղծման մեջ։ Ստեղծում եմ ավտոմատացված համակարգեր, կայքեր և թվային գործիքներ, որոնք լուծում են իրական բիզնես խնդիրներ՝ նվազեցնելով կրկնվող աշխատանքը, պարզեցնելով գործընթացները և օգնելով բիզնեսին ավելի արագ զարգանալ։",
       ctaPrimary: "Կապվել ինձ հետ",
-      ctaSecondary: "Ներբեռնել CV",
-      ctaSecondaryComingSoon: "CV-ն շուտով",
     },
     about: {
       eyebrow: "Իմ մասին",
@@ -363,9 +354,13 @@ export const translations: Record<Lang, Translation> = {
       emptyState: "Վկայագրերը շուտով։",
       viewCredential: "Դիտել վկայագիրը",
       items: {
-        claudeCode: {
-          name: "Claude Code — AI-աջակցվող ծրագրավորում",
-          description: "Խորացնում եմ Claude Code-ով աշխատանքս՝ արտադրական որակի AI-աջակցվող ծրագրավորման ուղղությամբ։",
+        claude101: {
+          name: "Claude 101",
+          description: "Ավարտել եմ Anthropic-ի հիմնական դասընթացը՝ Claude-ի հետ արդյունավետ աշխատելու վերաբերյալ։",
+        },
+        claudeCode101: {
+          name: "Claude Code 101",
+          description: "Ավարտել եմ Anthropic-ի դասընթացը՝ Claude Code-ով AI-աջակցվող ծրագրավորման վերաբերյալ։",
         },
       },
     },
@@ -390,9 +385,6 @@ export const translations: Record<Lang, Translation> = {
           description: "LVG Engineering ընկերության համար նախագծված պրոֆեսիոնալ SVG լոգո և բրենդային նշան։",
         },
       },
-    },
-    testimonial: {
-      placeholder: "Հաճախորդների կարծիքները շուտով։",
     },
     contact: {
       eyebrow: "Կապ",

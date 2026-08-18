@@ -12,7 +12,8 @@ export const projectsMeta: ProjectMeta[] = [
     id: "carscope",
     name: "CarScope AI",
     tags: ["React", "TypeScript", "n8n", "Supabase", "Vercel"],
-    link: "https://github.com/TatulAi/carscope-ai",
+    // TODO: swap for the custom domain once one is purchased.
+    link: "https://carscope-ai.vercel.app/",
     isPlaceholderLink: false,
   },
   {

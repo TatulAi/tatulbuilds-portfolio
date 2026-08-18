@@ -4,7 +4,7 @@ Guidance for Claude Code (or any future session) working in this repository.
 
 ## Project
 
-Single-page portfolio/CV site for Tatul Ghazaryan (TatulAI) — n8n automation & AI-assisted web development. React + Vite + TypeScript + Tailwind CSS v4. See `README.md` for setup, placeholders still pending, and deployment instructions.
+Single-page portfolio/CV site for Tatul Ghazaryan (TatulBuilds) — n8n automation & AI-assisted web development. React + Vite + TypeScript + Tailwind CSS v4. See `README.md` for setup, placeholders still pending, and deployment instructions.
 
 ## Commands
 
@@ -17,7 +17,7 @@ npm run preview  # preview the production build
 
 ## Architecture
 
-- `src/components/` — feature components: `Header`, `Hero`, `About`, `Skills`, `Certifications`, `Projects`, `Testimonial`, `Contact`, `Footer`, `ThemeToggle`, `LanguageSwitcher`, plus shared `Reveal` (scroll-in animation) and `SectionHeading`.
+- `src/components/` — feature components: `Header`, `Hero`, `About`, `Skills`, `Certifications`, `Projects`, `Contact`, `Footer`, `ThemeToggle`, `LanguageSwitcher`, plus shared `Reveal` (scroll-in animation) and `SectionHeading`.
 - `src/components/ui/` — reusable low-level primitives (shadcn-style convention, no shadcn CLI actually installed — see Styling below).
   - `glow-card.tsx` — in active use. Wraps a card `<div>`, tracks cursor angle, drives a `--rotation` CSS var consumed by the `.border-glow` class in `index.css` to sweep an accent-colored ring around the border on hover. Used by `Projects.tsx` and `Certifications.tsx`.
   - `info-card.tsx` — **unused leftover** from an earlier experiment (a heavier neon-bordered card component with its own image/title/description layout). Not imported anywhere. Safe to delete, or repurpose if a fuller card treatment is wanted later.
@@ -35,4 +35,4 @@ npm run preview  # preview the production build
 
 ## Known open items
 
-See `README.md`'s placeholder table — currently: CV PDF, real client testimonial, two placeholder project links (Instant, LVG Engineering), project/hero images, and a native-speaker pass on the Slovak/Armenian translations.
+See `README.md`'s placeholder table — currently: two placeholder project links (Instant, LVG Engineering), project/hero images, and a native-speaker pass on the Slovak/Armenian translations.

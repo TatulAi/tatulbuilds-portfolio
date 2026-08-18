@@ -6,7 +6,6 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
-import { Testimonial } from "./components/Testimonial";
 import { LanguageProvider } from "./context/LanguageContext";
 import { ThemeProvider } from "./context/ThemeContext";
 
@@ -21,7 +20,6 @@ function App() {
           <Skills />
           <Certifications />
           <Projects />
-          <Testimonial />
           <Contact />
         </main>
         <Footer />

@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -61,7 +61,9 @@ export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState(""); // honeypot — left empty by real users
   const [status, setStatus] = useState<SubmitStatus>("idle");
+  const formRenderedAt = useRef(Date.now());
 
   const linkLabels: Record<(typeof links)[number]["key"], string> = {
     email: t.contact.emailLabel,
@@ -77,13 +79,14 @@ export function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, company, formRenderedAt: formRenderedAt.current }),
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
       setName("");
       setEmail("");
       setMessage("");
+      setCompany("");
     } catch {
       setStatus("error");
     }
@@ -100,6 +103,16 @@ export function Contact() {
         <div className="grid gap-12 md:grid-cols-[1.3fr_1fr]">
           <Reveal>
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <input
+                type="text"
+                name="company"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-[9999px] h-0 w-0 opacity-0"
+              />
               <div className="flex flex-col gap-1.5">
                 <label htmlFor="name" className="text-base text-text-secondary">
                   {t.contact.formName}
@@ -167,12 +180,13 @@ export function Contact() {
                     href={link.href}
                     target={link.key === "email" ? undefined : "_blank"}
                     rel={link.key === "email" ? undefined : "noreferrer"}
+                    aria-label={link.key === "email" ? linkLabels.email : undefined}
                     className="flex items-center gap-3 text-lg text-text-secondary transition-colors hover:text-accent"
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       {link.icon}
                     </svg>
-                    {linkLabels[link.key]}
+                    {link.key === "email" ? CONTACT_EMAIL : linkLabels[link.key]}
                   </a>
                 </li>
               ))}
