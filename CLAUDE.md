@@ -4,7 +4,7 @@ Guidance for Claude Code (or any future session) working in this repository.
 
 ## Project
 
-Single-page portfolio/CV site for Tatul Ghazaryan (TatulBuilds) — n8n automation & AI-assisted web development. React + Vite + TypeScript + Tailwind CSS v4. See `README.md` for setup, placeholders still pending, and deployment instructions.
+Single-page portfolio/CV site for Tatul Ghazaryan (TatulBuilds) — n8n automation & modern web development. React + Vite + TypeScript + Tailwind CSS v4. See `README.md` for setup, placeholders still pending, and deployment instructions.
 
 ## Commands
 

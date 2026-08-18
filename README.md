@@ -1,6 +1,6 @@
 # TatulBuilds Portfolio
 
-Single-page portfolio/CV site for Tatul Ghazaryan (TatulBuilds) — n8n automation & AI-assisted web development. Built with React + Vite + TypeScript + Tailwind CSS.
+Single-page portfolio/CV site for Tatul Ghazaryan (TatulBuilds) — n8n automation & modern web development. Built with React + Vite + TypeScript + Tailwind CSS.
 
 ## Getting started
 
