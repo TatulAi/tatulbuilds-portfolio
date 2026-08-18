@@ -1,5 +1,6 @@
 // Vercel Edge Function — handles the contact form POST and sends it via Resend.
 // Requires env vars: RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL.
+/// <reference types="node" />
 import { checkBotId } from "botid/server";
 
 export const config = { runtime: "edge" };
