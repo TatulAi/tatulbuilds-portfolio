@@ -21,7 +21,7 @@ npm run preview  # preview the production build
 - `src/components/ui/` — reusable low-level primitives (shadcn-style convention, no shadcn CLI actually installed — see Styling below).
   - `glow-card.tsx` — in active use. Wraps a card `<div>`, tracks cursor angle, drives a `--rotation` CSS var consumed by the `.border-glow` class in `index.css` to sweep an accent-colored ring around the border on hover. Used by `Projects.tsx` and `Certifications.tsx`.
   - `info-card.tsx` — **unused leftover** from an earlier experiment (a heavier neon-bordered card component with its own image/title/description layout). Not imported anywhere. Safe to delete, or repurpose if a fuller card treatment is wanted later.
-- `src/context/` — `ThemeContext` (light/dark; sets `data-theme` on `<html>`; persisted to `localStorage` under `tatulai-theme`) and `LanguageContext` (en/sk/am).
+- `src/context/` — `ThemeContext` (light/dark; sets `data-theme` on `<html>`; persisted to `localStorage` under `tatulbuilds-theme`) and `LanguageContext` (en/sk/am).
 - `src/i18n/` — `translations.ts` (all UI copy for `en`/`sk`/`am`), `projects.ts`, `certifications.ts` (typed metadata arrays rendered by their respective components).
 - `src/hooks/` — `useScrollReveal`, `useScrollSpy`.
 - `api/contact.ts` — Vercel **Edge Function** backing the contact form, sends mail via Resend's REST API (no SDK dependency). Requires env vars `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL` (set in Vercel project settings). Local `vite dev` does not route `/api/*` — use `vercel dev` to test the form end-to-end.

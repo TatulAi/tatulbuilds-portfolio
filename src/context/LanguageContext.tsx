@@ -7,7 +7,7 @@ interface LanguageContextValue {
   t: Translation;
 }
 
-const STORAGE_KEY = "tatulai-lang";
+const STORAGE_KEY = "tatulbuilds-lang";
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 

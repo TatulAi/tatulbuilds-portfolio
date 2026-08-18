@@ -18,7 +18,7 @@ npm run lint      # oxlint
 | Project links | `src/i18n/projects.ts` | "Instant" and "LVG Engineering" use `#` placeholder links (`isPlaceholderLink: true`). |
 | Project images | Not yet added — cards are currently text-only, styled to the site's palette. Add images and update `Projects.tsx` when ready. |
 | Contact form backend | `api/contact.ts` (Vercel Edge Function, sends via [Resend](https://resend.com)) | Requires env vars `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL` (the `FROM` address must be on a domain verified in Resend). Set these in the Vercel project settings before going live. Local `vite dev` won't hit `/api/*` — use `vercel dev` to test the form locally. |
-| SEO domain | `index.html` (canonical/OG/Twitter URLs, JSON-LD), `public/robots.txt`, `public/sitemap.xml` | All currently point to the placeholder `https://tatulai-portfolio.vercel.app/`. Update to the real production domain once one is finalized. |
+| SEO domain | `index.html` (canonical/OG/Twitter URLs, JSON-LD), `public/robots.txt`, `public/sitemap.xml` | All currently point to `https://tatulbuilds-portfolio.vercel.app/`. Update to the real production domain once one is finalized. |
 | Social preview image | `index.html` (`og:image`/`twitter:image`) | Currently reuses `logo.png`. Replace with a dedicated 1200×630 image for a proper link-preview card. |
 
 ## Translations

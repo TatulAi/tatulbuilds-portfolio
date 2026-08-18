@@ -8,7 +8,7 @@ interface ThemeContextValue {
   toggleTheme: () => void;
 }
 
-const STORAGE_KEY = "tatulai-theme";
+const STORAGE_KEY = "tatulbuilds-theme";
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
