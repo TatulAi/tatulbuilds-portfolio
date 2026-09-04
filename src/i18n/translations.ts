@@ -81,17 +81,17 @@ export const translations: Record<Lang, Translation> = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "AI Builder & Vibe Coder",
+      eyebrow: "AI Builder & AI-Assisted Developer",
       greeting: "Hi, I'm Tatul",
       subtext:
-        "I'm an AI Builder and vibe coder specializing in n8n workflow automation and modern web development. I build custom automations, websites, and web applications that solve real business problems, streamline operations, and turn ideas into reliable digital products.",
+        "I'm an AI Builder and AI-assisted developer specializing in n8n workflow automation and modern web development. I build custom automations, websites, and web applications that solve real business problems, streamline operations, and turn ideas into reliable digital products.",
       ctaPrimary: "Get in touch",
     },
     about: {
       eyebrow: "About",
       heading: "A bit about me",
       paragraphs: [
-        "As an AI Builder and vibe coder, I combine rapid AI-assisted development with n8n automation to turn complex workflows into clean, maintainable software.",
+        "As an AI Builder and AI-assisted developer, I pair fast, AI-assisted development with n8n automation to turn complex workflows into clean, maintainable software.",
         "My approach is built on structured thinking, strict attention to detail, and a systems-first mindset. I break complex business bottlenecks into practical digital solutions that just work.",
       ],
     },
@@ -193,17 +193,17 @@ export const translations: Record<Lang, Translation> = {
       contact: "Kontakt",
     },
     hero: {
-      eyebrow: "AI Builder & Vibe Coder",
+      eyebrow: "AI Builder & AI-Assisted Developer",
       greeting: "Ahoj, som Tatul",
       subtext:
-        "Som AI Builder a vibe coder so zameraním na automatizáciu workflowov v n8n a moderný webový vývoj. Vytváram automatizácie, webové stránky a webové aplikácie na mieru, ktoré riešia reálne potreby firiem, zjednodušujú procesy a premieňajú nápady na spoľahlivé digitálne riešenia.",
+        "Som AI Builder a AI-asistovaný vývojár so zameraním na automatizáciu workflowov v n8n a moderný webový vývoj. Vytváram automatizácie, webové stránky a webové aplikácie na mieru, ktoré riešia reálne potreby firiem, zjednodušujú procesy a premieňajú nápady na spoľahlivé digitálne riešenia.",
       ctaPrimary: "Kontaktujte ma",
     },
     about: {
       eyebrow: "O mne",
       heading: "Niečo o mne",
       paragraphs: [
-        "Ako AI Builder a vibe coder kombinujem rýchly, AI-asistovaný vývoj s automatizáciou v n8n, aby som zložité workflow premenil na prehľadný, ľahko udržateľný softvér.",
+        "Ako AI Builder a AI-asistovaný vývojár spájam rýchly vývoj s automatizáciou v n8n, aby som zložité workflow premenil na prehľadný, ľahko udržateľný softvér.",
         "Môj prístup je založený na štruktúrovanom myslení, dôraze na detail a systémovom mindsete. Zložité prekážky v biznise rozkladám na praktické digitálne riešenia, ktoré jednoducho fungujú.",
       ],
     },
@@ -305,17 +305,17 @@ export const translations: Record<Lang, Translation> = {
       contact: "Կապ",
     },
     hero: {
-      eyebrow: "AI Builder & Vibe Coder",
+      eyebrow: "AI Builder & AI-Assisted Developer",
       greeting: "Բարև, ես Թաթուլն եմ",
       subtext:
-        "Ես AI Builder և vibe coder եմ՝ մասնագիտացած n8n workflow ավտոմատացման և ժամանակակից կայքերի ու վեբ հավելվածների ստեղծման մեջ։ Ստեղծում եմ ավտոմատացված համակարգեր, կայքեր և թվային գործիքներ, որոնք լուծում են իրական բիզնես խնդիրներ՝ նվազեցնելով կրկնվող աշխատանքը, պարզեցնելով գործընթացները և օգնելով բիզնեսին ավելի արագ զարգանալ։",
+        "Ես AI Builder և AI-assisted developer եմ՝ մասնագիտացած n8n workflow ավտոմատացման և ժամանակակից կայքերի ու վեբ հավելվածների ստեղծման մեջ։ Ստեղծում եմ ավտոմատացված համակարգեր, կայքեր և թվային գործիքներ, որոնք լուծում են իրական բիզնես խնդիրներ՝ նվազեցնելով կրկնվող աշխատանքը, պարզեցնելով գործընթացները և օգնելով բիզնեսին ավելի արագ զարգանալ։",
       ctaPrimary: "Կապվել ինձ հետ",
     },
     about: {
       eyebrow: "Իմ մասին",
       heading: "Մի փոքր իմ մասին",
       paragraphs: [
-        "Որպես AI Builder և vibe coder՝ ես համատեղում եմ արագ, AI-աջակցվող ծրագրավորումը n8n ավտոմատացման հետ՝ բարդ workflow-ները վերածելով մաքուր, հեշտ պահպանվող ծրագրային ապահովման։",
+        "Որպես AI Builder և AI-assisted developer՝ ես համատեղում եմ արագ ծրագրավորումը n8n ավտոմատացման հետ՝ բարդ workflow-ները վերածելով մաքուր, հեշտ պահպանվող ծրագրային ապահովման։",
         "Իմ մոտեցումը հիմնված է կառուցվածքային մտածողության, մանրուքների նկատմամբ խիստ ուշադրության և համակարգային մտածելակերպի վրա։ Ես բարդ բիզնես խոչընդոտները վերածում եմ գործնական թվային լուծումների, որոնք պարզապես աշխատում են։",
       ],
     },
