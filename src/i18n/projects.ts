@@ -1,12 +1,11 @@
 export interface ProjectMeta {
-  id: "carscope" | "n8nLibrary" | "instant" | "lvg";
+  id: "carscope" | "n8nLibrary" | "lvg";
   name: string;
   tags: string[];
   link: string;
   isPlaceholderLink: boolean;
 }
 
-// TODO: replace placeholder link (Instant) once a public URL exists.
 export const projectsMeta: ProjectMeta[] = [
   {
     id: "carscope",
@@ -22,13 +21,6 @@ export const projectsMeta: ProjectMeta[] = [
     tags: ["n8n", "Automation", "Gmail API"],
     link: "https://github.com/TatulAi/n8n-workflows",
     isPlaceholderLink: false,
-  },
-  {
-    id: "instant",
-    name: "Instant",
-    tags: ["MJML", "HTML Email", "Client work"],
-    link: "#",
-    isPlaceholderLink: true,
   },
   {
     id: "lvg",

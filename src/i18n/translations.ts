@@ -46,7 +46,7 @@ export interface Translation {
     eyebrow: string;
     heading: string;
     viewLink: string;
-    items: Record<"carscope" | "n8nLibrary" | "instant" | "lvg", { description: string }>;
+    items: Record<"carscope" | "n8nLibrary" | "lvg", { description: string }>;
   };
   contact: {
     eyebrow: string;
@@ -152,10 +152,6 @@ export const translations: Record<Lang, Translation> = {
         n8nLibrary: {
           description:
             "A public collection of sanitized, reusable n8n automation workflows, including a Gmail AI triage agent.",
-        },
-        instant: {
-          description:
-            "An MJML-based responsive HTML email template system built for a client, keeping branding consistent across email clients.",
         },
         lvg: {
           description: "A professional SVG logo and brand mark designed for LVG Engineering.",
@@ -265,10 +261,6 @@ export const translations: Record<Lang, Translation> = {
           description:
             "Verejná zbierka očistených, opakovane použiteľných n8n automatizačných workflow vrátane AI agenta na triedenie Gmailu.",
         },
-        instant: {
-          description:
-            "Systém responzívnych HTML e-mailových šablón postavený na MJML pre klienta, zabezpečujúci konzistentný branding naprieč e-mailovými klientmi.",
-        },
         lvg: {
           description: "Profesionálne SVG logo a značka navrhnuté pre spoločnosť LVG Engineering.",
         },
@@ -376,10 +368,6 @@ export const translations: Record<Lang, Translation> = {
         n8nLibrary: {
           description:
             "n8n ավտոմատացման կրկնակի օգտագործման workflow-ների հանրային հավաքածու, այդ թվում՝ Gmail-ի AI տեսակավորման գործակալ։",
-        },
-        instant: {
-          description:
-            "MJML-ի վրա հիմնված արձագանքող HTML էլ. նամակների ձևանմուշների համակարգ՝ ստեղծված հաճախորդի համար, որը պահպանում է հետևողական բրենդինգ բոլոր էլ. փոստի հաճախորդների միջև։",
         },
         lvg: {
           description: "LVG Engineering ընկերության համար նախագծված պրոֆեսիոնալ SVG լոգո և բրենդային նշան։",
