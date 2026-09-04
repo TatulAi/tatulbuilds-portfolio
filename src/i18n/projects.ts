@@ -6,7 +6,7 @@ export interface ProjectMeta {
   isPlaceholderLink: boolean;
 }
 
-// TODO: replace placeholder links (Instant, LVG Engineering) once public URLs exist.
+// TODO: replace placeholder link (Instant) once a public URL exists.
 export const projectsMeta: ProjectMeta[] = [
   {
     id: "carscope",
@@ -34,7 +34,7 @@ export const projectsMeta: ProjectMeta[] = [
     id: "lvg",
     name: "LVG Engineering",
     tags: ["Branding", "SVG", "Design"],
-    link: "#",
-    isPlaceholderLink: true,
+    link: "https://lvgengineering.sk",
+    isPlaceholderLink: false,
   },
 ];
