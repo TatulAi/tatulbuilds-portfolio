@@ -311,7 +311,7 @@ export const translations: Record<Lang, Translation> = {
     meta: { title: "Թաթուլ Ղազարյան — TatulBuilds" },
     nav: {
       about: "Իմ մասին",
-      now: "Հիմա ստեղծում եմ",
+      now: "Ընթացիկ",
       skills: "Հմտություններ",
       certifications: "Վկայագրեր",
       projects: "Նախագծեր",

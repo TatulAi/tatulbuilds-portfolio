@@ -39,20 +39,20 @@ export function Header() {
         scrolled ? "border-b border-border bg-bg/80 backdrop-blur-md" : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-1.5">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-1.5">
         <a
           href="#top"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="flex items-center"
+          className="flex flex-shrink-0 items-center"
           aria-label="TatulBuilds — back to top"
         >
           <img src="/logo.png" alt="TatulBuilds" className="logo-img h-12 w-auto sm:h-16 lg:h-20" />
         </a>
 
-        <nav className="hidden items-center gap-5 md:flex lg:gap-8">
+        <nav className="hidden items-center gap-5 xl:flex">
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -67,12 +67,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 md:flex">
+        <div className="hidden flex-shrink-0 items-center gap-5 xl:flex">
           <LanguageSwitcher />
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 xl:hidden">
           <ThemeToggle />
           <button
             type="button"
@@ -93,7 +93,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-border bg-bg px-6 py-5 md:hidden">
+        <div className="border-t border-border bg-bg px-6 py-5 xl:hidden">
           <nav className="flex flex-col gap-4">
             {navItems.map((item) => (
               <button
