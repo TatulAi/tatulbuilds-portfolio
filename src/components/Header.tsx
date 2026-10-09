@@ -4,7 +4,7 @@ import { useScrollSpy } from "../hooks/useScrollSpy";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 
-const SECTION_IDS = ["about", "skills", "certifications", "projects", "contact"];
+const SECTION_IDS = ["about", "now", "skills", "certifications", "projects", "contact"];
 
 export function Header() {
   const { t } = useLanguage();
@@ -21,6 +21,7 @@ export function Header() {
 
   const navItems: { id: string; label: string }[] = [
     { id: "about", label: t.nav.about },
+    { id: "now", label: t.nav.now },
     { id: "skills", label: t.nav.skills },
     { id: "certifications", label: t.nav.certifications },
     { id: "projects", label: t.nav.projects },
@@ -51,13 +52,13 @@ export function Header() {
           <img src="/logo.png" alt="TatulBuilds" className="logo-img h-12 w-auto sm:h-16 lg:h-20" />
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-5 md:flex lg:gap-8">
           {navItems.map((item) => (
             <button
               key={item.id}
               type="button"
               onClick={() => handleNavClick(item.id)}
-              className={`relative text-base transition-colors hover:text-warm ${
+              className={`relative whitespace-nowrap text-base transition-colors hover:text-warm ${
                 activeId === item.id ? "text-warm" : "text-text-secondary"
               }`}
             >

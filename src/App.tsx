@@ -5,6 +5,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { NowBuilding } from "./components/NowBuilding";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { LanguageProvider } from "./context/LanguageContext";
@@ -18,6 +19,7 @@ function App() {
         <main>
           <Hero />
           <About />
+          <NowBuilding />
           <Skills />
           <Certifications />
           <Projects />

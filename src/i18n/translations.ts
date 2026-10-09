@@ -12,6 +12,7 @@ export interface Translation {
   };
   nav: {
     about: string;
+    now: string;
     skills: string;
     certifications: string;
     projects: string;
@@ -22,11 +23,16 @@ export interface Translation {
     greeting: string;
     subtext: string;
     ctaPrimary: string;
+    nowBadge: string;
   };
   about: {
     eyebrow: string;
     heading: string;
     paragraphs: string[];
+  };
+  now: {
+    eyebrow: string;
+    heading: string;
   };
   skills: {
     eyebrow: string;
@@ -75,6 +81,7 @@ export const translations: Record<Lang, Translation> = {
     meta: { title: "Tatul Ghazaryan — TatulBuilds" },
     nav: {
       about: "About",
+      now: "Now building",
       skills: "Skills",
       certifications: "Certifications",
       projects: "Projects",
@@ -86,6 +93,7 @@ export const translations: Record<Lang, Translation> = {
       subtext:
         "I'm an AI Builder and AI-assisted developer specializing in n8n workflow automation and modern web development. I build custom automations, websites, and web applications that solve real business problems, streamline operations, and turn ideas into reliable digital products.",
       ctaPrimary: "Get in touch",
+      nowBadge: "Now: e-invoicing automation for Slovakia's 2027 mandate",
     },
     about: {
       eyebrow: "About",
@@ -94,6 +102,10 @@ export const translations: Record<Lang, Translation> = {
         "As an AI Builder and AI-assisted developer, I pair fast, AI-assisted development with n8n automation to turn complex workflows into clean, maintainable software.",
         "My approach is built on structured thinking, strict attention to detail, and a systems-first mindset. I break complex business bottlenecks into practical digital solutions that just work.",
       ],
+    },
+    now: {
+      eyebrow: "Now building",
+      heading: "What I'm working on right now",
     },
     skills: {
       eyebrow: "Skills",
@@ -106,6 +118,7 @@ export const translations: Record<Lang, Translation> = {
             "AI agent design / LLM integration",
             "Claude Code (AI-assisted development)",
             "Prompt engineering",
+            "E-invoicing integration (Peppol) — connecting e-shops, Excel and custom systems to certified access points",
           ],
         },
         {
@@ -183,6 +196,7 @@ export const translations: Record<Lang, Translation> = {
     meta: { title: "Tatul Ghazaryan — TatulBuilds" },
     nav: {
       about: "O mne",
+      now: "Práve tvorím",
       skills: "Zručnosti",
       certifications: "Certifikáty",
       projects: "Projekty",
@@ -194,6 +208,7 @@ export const translations: Record<Lang, Translation> = {
       subtext:
         "Som AI Builder a AI-asistovaný vývojár so zameraním na automatizáciu workflowov v n8n a moderný webový vývoj. Vytváram automatizácie, webové stránky a webové aplikácie na mieru, ktoré riešia reálne potreby firiem, zjednodušujú procesy a premieňajú nápady na spoľahlivé digitálne riešenia.",
       ctaPrimary: "Kontaktujte ma",
+      nowBadge: "Práve teraz: automatizácia e-fakturácie pre slovenskú povinnosť od roku 2027",
     },
     about: {
       eyebrow: "O mne",
@@ -202,6 +217,10 @@ export const translations: Record<Lang, Translation> = {
         "Ako AI Builder a AI-asistovaný vývojár spájam rýchly vývoj s automatizáciou v n8n, aby som zložité workflow premenil na prehľadný, ľahko udržateľný softvér.",
         "Môj prístup je založený na štruktúrovanom myslení, dôraze na detail a systémovom mindsete. Zložité prekážky v biznise rozkladám na praktické digitálne riešenia, ktoré jednoducho fungujú.",
       ],
+    },
+    now: {
+      eyebrow: "Práve tvorím",
+      heading: "Na čom práve pracujem",
     },
     skills: {
       eyebrow: "Zručnosti",
@@ -214,6 +233,7 @@ export const translations: Record<Lang, Translation> = {
             "Návrh AI agentov / integrácia LLM",
             "Claude Code (AI-asistovaný vývoj)",
             "Prompt engineering",
+            "Integrácia e-fakturácie (Peppol) — prepojenie e-shopov, Excelu a vlastných systémov s certifikovanými prístupovými bodmi",
           ],
         },
         {
@@ -291,6 +311,7 @@ export const translations: Record<Lang, Translation> = {
     meta: { title: "Թաթուլ Ղազարյան — TatulBuilds" },
     nav: {
       about: "Իմ մասին",
+      now: "Հիմա ստեղծում եմ",
       skills: "Հմտություններ",
       certifications: "Վկայագրեր",
       projects: "Նախագծեր",
@@ -302,6 +323,7 @@ export const translations: Record<Lang, Translation> = {
       subtext:
         "Ես AI Builder և AI-assisted developer եմ՝ մասնագիտացած n8n workflow ավտոմատացման և ժամանակակից կայքերի ու վեբ հավելվածների ստեղծման մեջ։ Ստեղծում եմ ավտոմատացված համակարգեր, կայքեր և թվային գործիքներ, որոնք լուծում են իրական բիզնես խնդիրներ՝ նվազեցնելով կրկնվող աշխատանքը, պարզեցնելով գործընթացները և օգնելով բիզնեսին ավելի արագ զարգանալ։",
       ctaPrimary: "Կապվել ինձ հետ",
+      nowBadge: "Հիմա՝ էլեկտրոնային ֆակտուրաների ավտոմատացում Սլովակիայի 2027-ի պահանջի համար",
     },
     about: {
       eyebrow: "Իմ մասին",
@@ -310,6 +332,10 @@ export const translations: Record<Lang, Translation> = {
         "Որպես AI Builder և AI-assisted developer՝ ես համատեղում եմ արագ ծրագրավորումը n8n ավտոմատացման հետ՝ բարդ workflow-ները վերածելով մաքուր, հեշտ պահպանվող ծրագրային ապահովման։",
         "Իմ մոտեցումը հիմնված է կառուցվածքային մտածողության, մանրուքների նկատմամբ խիստ ուշադրության և համակարգային մտածելակերպի վրա։ Ես բարդ բիզնես խոչընդոտները վերածում եմ գործնական թվային լուծումների, որոնք պարզապես աշխատում են։",
       ],
+    },
+    now: {
+      eyebrow: "Հիմա ստեղծում եմ",
+      heading: "Ինչի վրա եմ աշխատում հիմա",
     },
     skills: {
       eyebrow: "Հմտություններ",
@@ -322,6 +348,7 @@ export const translations: Record<Lang, Translation> = {
             "AI գործակալների նախագծում / LLM ինտեգրում",
             "Claude Code (AI-աջակցվող ծրագրավորում)",
             "Prompt engineering",
+            "Էլեկտրոնային ֆակտուրաների ինտեգրում (Peppol)՝ e-shop-երի, Excel-ի և սեփական համակարգերի միացում սերտիֆիկացված access point-երին",
           ],
         },
         {
