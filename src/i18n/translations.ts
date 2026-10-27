@@ -52,7 +52,7 @@ export interface Translation {
     eyebrow: string;
     heading: string;
     viewLink: string;
-    items: Record<"carscope" | "n8nLibrary" | "lvg", { description: string }>;
+    items: Record<"n8nLibrary" | "lvg", { description: string }>;
   };
   contact: {
     eyebrow: string;
@@ -158,10 +158,6 @@ export const translations: Record<Lang, Translation> = {
       heading: "Some things I've built",
       viewLink: "View project",
       items: {
-        carscope: {
-          description:
-            "An AI-powered tool that evaluates car listings, helping buyers spot red flags and fair pricing at a glance.",
-        },
         n8nLibrary: {
           description:
             "A public collection of sanitized, reusable n8n automation workflows, including a Gmail AI triage agent.",
@@ -273,10 +269,6 @@ export const translations: Record<Lang, Translation> = {
       heading: "Niečo, čo som vytvoril",
       viewLink: "Zobraziť projekt",
       items: {
-        carscope: {
-          description:
-            "Nástroj poháňaný AI, ktorý vyhodnocuje inzeráty áut a pomáha kupujúcim na prvý pohľad odhaliť varovné signály aj férovú cenu.",
-        },
         n8nLibrary: {
           description:
             "Verejná zbierka očistených, opakovane použiteľných n8n automatizačných workflow vrátane AI agenta na triedenie Gmailu.",
@@ -388,10 +380,6 @@ export const translations: Record<Lang, Translation> = {
       heading: "Մի քանի բան, որ ես ստեղծել եմ",
       viewLink: "Դիտել նախագիծը",
       items: {
-        carscope: {
-          description:
-            "AI-ով աշխատող գործիք, որը գնահատում է մեքենաների հայտարարությունները՝ օգնելով գնորդներին մեկ հայացքից նկատել խնդրահարույց նշաններ և արդար գին։",
-        },
         n8nLibrary: {
           description:
             "n8n ավտոմատացման կրկնակի օգտագործման workflow-ների հանրային հավաքածու, այդ թվում՝ Gmail-ի AI տեսակավորման գործակալ։",
