@@ -208,7 +208,7 @@ function VoiceDemoPanels({ agentId, calendarUrl }: VoiceDemoPanelProps) {
       // Asked up front because a denied microphone is the most likely failure; the SDK opens its own stream.
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       stream.getTracks().forEach((track) => track.stop());
-      startSession({ agentId });
+      startSession({ agentId, connectionType: "websocket" });
     } catch {
       setCallFailed(true);
     }
