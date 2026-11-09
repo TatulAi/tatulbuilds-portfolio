@@ -1,10 +1,20 @@
-export interface ProjectMeta {
-  id: "n8nLibrary" | "lvg";
+interface ProjectBase {
+  id: "n8nLibrary" | "lvg" | "voiceAgent";
   name: string;
   tags: string[];
+}
+
+interface LinkProject extends ProjectBase {
   link: string;
   isPlaceholderLink: boolean;
+  demoAgentId?: undefined;
 }
+
+interface VoiceDemoProject extends ProjectBase {
+  demoAgentId: string;
+}
+
+export type ProjectMeta = LinkProject | VoiceDemoProject;
 
 export const projectsMeta: ProjectMeta[] = [
   {
@@ -20,5 +30,11 @@ export const projectsMeta: ProjectMeta[] = [
     tags: ["Branding", "SVG", "Design"],
     link: "https://lvgengineering.sk",
     isPlaceholderLink: false,
+  },
+  {
+    id: "voiceAgent",
+    name: "Voice Booking Agent",
+    tags: ["n8n", "Voice AI", "ElevenLabs", "Google Calendar"],
+    demoAgentId: "agent_6001m6vpwb7aebhsep13px2npfwh",
   },
 ];

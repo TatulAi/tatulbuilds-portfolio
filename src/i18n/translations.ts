@@ -52,7 +52,9 @@ export interface Translation {
     eyebrow: string;
     heading: string;
     viewLink: string;
-    items: Record<"n8nLibrary" | "lvg", { description: string }>;
+    tryDemo: string;
+    demoHint: string;
+    items: Record<"n8nLibrary" | "lvg" | "voiceAgent", { description: string }>;
   };
   contact: {
     eyebrow: string;
@@ -157,6 +159,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "Projects",
       heading: "Some things I've built",
       viewLink: "View project",
+      tryDemo: "Try the live demo",
+      demoHint: "The agent speaks English. Try: \"I'd like a haircut tomorrow.\"",
       items: {
         n8nLibrary: {
           description:
@@ -164,6 +168,10 @@ export const translations: Record<Lang, Translation> = {
         },
         lvg: {
           description: "A professional SVG logo and brand mark designed for LVG Engineering.",
+        },
+        voiceAgent: {
+          description:
+            "A voice AI receptionist for a barbershop. It checks real availability in Google Calendar and books the appointment during the call. Built with n8n and ElevenLabs.",
         },
       },
     },
@@ -268,6 +276,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "Projekty",
       heading: "Niečo, čo som vytvoril",
       viewLink: "Zobraziť projekt",
+      tryDemo: "Vyskúšať demo",
+      demoHint: "Agent hovorí po anglicky. Skús: \"I'd like a haircut tomorrow.\"",
       items: {
         n8nLibrary: {
           description:
@@ -275,6 +285,10 @@ export const translations: Record<Lang, Translation> = {
         },
         lvg: {
           description: "Profesionálne SVG logo a značka navrhnuté pre spoločnosť LVG Engineering.",
+        },
+        voiceAgent: {
+          description:
+            "Hlasový AI asistent pre holičstvo. Zistí voľné termíny v Google Kalendári a počas hovoru reálne zarezervuje návštevu. Postavený na n8n a ElevenLabs.",
         },
       },
     },
@@ -379,6 +393,8 @@ export const translations: Record<Lang, Translation> = {
       eyebrow: "Նախագծեր",
       heading: "Մի քանի բան, որ ես ստեղծել եմ",
       viewLink: "Դիտել նախագիծը",
+      tryDemo: "Փորձել դեմոն",
+      demoHint: "Agent-ը խոսում է անգլերեն։ Փորձիր՝ \"I'd like a haircut tomorrow.\"",
       items: {
         n8nLibrary: {
           description:
@@ -386,6 +402,10 @@ export const translations: Record<Lang, Translation> = {
         },
         lvg: {
           description: "LVG Engineering ընկերության համար նախագծված պրոֆեսիոնալ SVG լոգո և բրենդային նշան։",
+        },
+        voiceAgent: {
+          description:
+            "Վարսավիրանոցի ձայնային AI ընդունարան։ Ստուգում է ազատ ժամերը Google Calendar-ում և զանգի ընթացքում իրականում ամրագրում է այցը։ Կառուցված է n8n-ով և ElevenLabs-ով։",
         },
       },
     },
