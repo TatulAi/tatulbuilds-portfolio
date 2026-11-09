@@ -197,7 +197,7 @@ export const translations: Record<Lang, Translation> = {
         },
         voiceAgent: {
           description:
-            "A voice AI receptionist for a barbershop. It checks real availability in Google Calendar and books the appointment during the call. Built with n8n and ElevenLabs.",
+            "A voice AI receptionist for a barbershop. It checks real availability in Google Calendar and books the appointment during the call. Built with n8n and ElevenLabs. The same setup works for clinics, beauty salons, hotels, hostels and any other business with a reception.",
         },
       },
     },
@@ -327,7 +327,7 @@ export const translations: Record<Lang, Translation> = {
         },
         voiceAgent: {
           description:
-            "Hlasový AI asistent pre holičstvo. Zistí voľné termíny v Google Kalendári a počas hovoru reálne zarezervuje návštevu. Postavený na n8n a ElevenLabs.",
+            "Hlasový AI asistent pre holičstvo. Zistí voľné termíny v Google Kalendári a počas hovoru reálne zarezervuje návštevu. Postavený na n8n a ElevenLabs. Rovnaké riešenie funguje aj pre kliniky, kozmetické salóny, hotely, hostely a každú ďalšiu prevádzku s recepciou.",
         },
       },
     },
@@ -457,7 +457,7 @@ export const translations: Record<Lang, Translation> = {
         },
         voiceAgent: {
           description:
-            "Վարսավիրանոցի ձայնային AI ընդունարան։ Ստուգում է ազատ ժամերը Google Calendar-ում և զանգի ընթացքում իրականում ամրագրում է այցը։ Կառուցված է n8n-ով և ElevenLabs-ով։",
+            "Վարսավիրանոցի ձայնային AI ընդունարան։ Ստուգում է ազատ ժամերը Google Calendar-ում և զանգի ընթացքում իրականում ամրագրում է այցը։ Կառուցված է n8n-ով և ElevenLabs-ով։ Նույն լուծումը հարմար է նաև կլինիկաների, գեղեցկության սրահների, հյուրանոցների, հոսթելների և ընդունարան ունեցող ցանկացած այլ բիզնեսի համար։",
         },
       },
     },
