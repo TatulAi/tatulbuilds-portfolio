@@ -15,6 +15,7 @@ const HOUR_HEIGHT_REM = 2.5;
 interface Booking {
   start: string;
   end: string;
+  title: string;
 }
 
 interface ZonedTime {
@@ -133,10 +134,12 @@ function WeekCalendar({ bookings, newKeys }: { bookings: Booking[]; newKeys: Set
                 .filter((p) => p.start.dayKey === dayKey)
                 .map(({ booking, start, endHours }) => {
                   const isNew = newKeys.has(bookingKey(booking));
+                  const time = timeFormat.format(new Date(booking.start));
                   return (
                     <div
                       key={bookingKey(booking)}
-                      className={`absolute inset-x-0.5 overflow-hidden rounded px-1 text-xs ${
+                      title={`${time} ${booking.title}`}
+                      className={`absolute inset-x-0.5 truncate rounded px-1 text-xs ${
                         isNew ? "bg-cta-bg font-medium text-cta-text" : "bg-accent/30 text-text"
                       }`}
                       style={{
@@ -144,7 +147,7 @@ function WeekCalendar({ bookings, newKeys }: { bookings: Booking[]; newKeys: Set
                         height: `${(endHours - start.hours) * HOUR_HEIGHT_REM}rem`,
                       }}
                     >
-                      {timeFormat.format(new Date(booking.start))}
+                      {booking.title || time}
                     </div>
                   );
                 })}
