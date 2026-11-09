@@ -54,6 +54,19 @@ export interface Translation {
     viewLink: string;
     tryDemo: string;
     demoHint: string;
+    demo: {
+      start: string;
+      end: string;
+      close: string;
+      idle: string;
+      connecting: string;
+      listening: string;
+      speaking: string;
+      calendarTitle: string;
+      newBooking: string;
+      callError: string;
+      calendarError: string;
+    };
     items: Record<"n8nLibrary" | "lvg" | "voiceAgent", { description: string }>;
   };
   contact: {
@@ -161,6 +174,19 @@ export const translations: Record<Lang, Translation> = {
       viewLink: "View project",
       tryDemo: "Try the live demo",
       demoHint: "The agent speaks English. Try: \"I'd like a haircut tomorrow.\"",
+      demo: {
+        start: "Start call",
+        end: "End call",
+        close: "Close",
+        idle: "Press start and allow your microphone.",
+        connecting: "Connecting…",
+        listening: "Listening…",
+        speaking: "Agent is speaking…",
+        calendarTitle: "Barbershop calendar",
+        newBooking: "New booking added",
+        callError: "The call couldn't start. Check microphone access and try again.",
+        calendarError: "The calendar couldn't be updated right now.",
+      },
       items: {
         n8nLibrary: {
           description:
@@ -278,6 +304,19 @@ export const translations: Record<Lang, Translation> = {
       viewLink: "Zobraziť projekt",
       tryDemo: "Vyskúšať demo",
       demoHint: "Agent hovorí po anglicky. Skús: \"I'd like a haircut tomorrow.\"",
+      demo: {
+        start: "Začať hovor",
+        end: "Ukončiť hovor",
+        close: "Zavrieť",
+        idle: "Stlač začať a povoľ mikrofón.",
+        connecting: "Pripája sa…",
+        listening: "Počúva…",
+        speaking: "Agent hovorí…",
+        calendarTitle: "Kalendár holičstva",
+        newBooking: "Pridaná nová rezervácia",
+        callError: "Hovor sa nepodarilo spustiť. Skontroluj prístup k mikrofónu a skús to znova.",
+        calendarError: "Kalendár sa momentálne nepodarilo aktualizovať.",
+      },
       items: {
         n8nLibrary: {
           description:
@@ -395,6 +434,19 @@ export const translations: Record<Lang, Translation> = {
       viewLink: "Դիտել նախագիծը",
       tryDemo: "Փորձել դեմոն",
       demoHint: "Agent-ը խոսում է անգլերեն։ Փորձիր՝ \"I'd like a haircut tomorrow.\"",
+      demo: {
+        start: "Սկսել զանգը",
+        end: "Ավարտել զանգը",
+        close: "Փակել",
+        idle: "Սեղմիր «Սկսել» և թույլատրիր խոսափողը։",
+        connecting: "Միանում է…",
+        listening: "Լսում է…",
+        speaking: "Agent-ը խոսում է…",
+        calendarTitle: "Վարսավիրանոցի օրացույց",
+        newBooking: "Ավելացվել է նոր ամրագրում",
+        callError: "Զանգը չհաջողվեց սկսել։ Ստուգիր խոսափողի թույլտվությունը և նորից փորձիր։",
+        calendarError: "Օրացույցն այս պահին չհաջողվեց թարմացնել։",
+      },
       items: {
         n8nLibrary: {
           description:

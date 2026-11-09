@@ -12,6 +12,7 @@ interface LinkProject extends ProjectBase {
 
 interface VoiceDemoProject extends ProjectBase {
   demoAgentId: string;
+  demoCalendarUrl: string;
 }
 
 export type ProjectMeta = LinkProject | VoiceDemoProject;
@@ -36,5 +37,6 @@ export const projectsMeta: ProjectMeta[] = [
     name: "Voice Booking Agent",
     tags: ["n8n", "Voice AI", "ElevenLabs", "Google Calendar"],
     demoAgentId: "agent_6001m6vpwb7aebhsep13px2npfwh",
+    demoCalendarUrl: "https://inquisitive-grasshopper.pikapod.net/webhook/voice-calendar-feed",
   },
 ];
